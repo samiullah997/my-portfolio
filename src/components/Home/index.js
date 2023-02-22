@@ -10,9 +10,9 @@ const Home = () => (
         <br />
         I&apos;m
         <img src={LogoTitle} alt="developer" />
-        Lobonan
+        ami
         <br />
-        web developer
+        Software Engineer
       </h1>
       <h2>Full Stack Developer / Front End Developer / Back End Developer</h2>
       <Link to="/contact" className="flat-button">CONTACT ME</Link>
