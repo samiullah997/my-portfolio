@@ -4,15 +4,18 @@ import { Link } from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import Logo from './Logo';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const nameArray = ['a', 'm', 'i'];
   const jobArray = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'g', 'i', 'n', 'e', 'e', 'r', '.'];
 
-  useEffect(() => setTimeout(() => {
-    setLetterClass('text-animate-hover');
-  }, 4000), []);
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 1000);
+  }, [letterClass]);
 
   return (
     <div className="container home-page">
@@ -39,6 +42,7 @@ const Home = () => {
         <h2>Full Stack Developer / Front End Developer / Back End Developer</h2>
         <Link to="/contact" className="flat-button">CONTACT ME</Link>
       </div>
+      <Logo />
     </div>
   );
 };
